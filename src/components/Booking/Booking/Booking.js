@@ -12,7 +12,7 @@ const Booking = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/addOrder', data)
+        axios.post('https://secret-beach-86139.herokuapp.com/addOrder', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Your Booking Successfully Complete');
@@ -24,7 +24,7 @@ const Booking = () => {
 
     }
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${ serviceId }`)
+        fetch(`https://secret-beach-86139.herokuapp.com/services/${ serviceId }`)
             .then(res => res.json())
             .then(data => setService(data))
     }, []);

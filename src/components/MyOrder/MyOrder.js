@@ -3,7 +3,7 @@ import './MyOrder.css';
 const MyOrder = ({ order }) => {
     const { serviceName, email, name } = order;
     const handleDelete = id => {
-        const url = `http://localhost:5000/addOrder/${ id }`;
+        const url = `https://secret-beach-86139.herokuapp.com/addOrder/${ id }`;
         fetch(url, {
             method: 'DELETE',
 
