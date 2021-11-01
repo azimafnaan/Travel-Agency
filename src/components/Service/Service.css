@@ -1,0 +1,7 @@
+.service {
+  background-color: #ffffff;
+  box-shadow: 12px 12px 12px 12px rgba(12, 50, 90, 0.2);
+}
+.service img {
+  height: 300px;
+}

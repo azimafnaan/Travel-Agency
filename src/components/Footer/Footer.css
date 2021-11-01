@@ -1,0 +1,19 @@
+.Footer {
+  background-color: #ffc342;
+  margin-top: 30px;
+}
+.Footer h2 {
+  margin-top: 20px;
+}
+
+.Footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 30px;
+}
+@media only screen and (max-width: 688px) {
+  .Footer-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

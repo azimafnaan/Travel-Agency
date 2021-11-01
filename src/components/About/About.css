@@ -1,0 +1,32 @@
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.about-container img {
+  width: 700px;
+  height: 500px;
+}
+
+.about-right {
+  text-align: center;
+
+  text-align: justify;
+  padding-right: 30px;
+}
+.about-right h2 {
+  color: hsl(48, 86%, 39%);
+}
+.about-right p {
+  line-height: 38px;
+}
+
+@media only screen and (max-width: 688px) {
+  .about-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-container img {
+    width: 100%;
+  }
+}

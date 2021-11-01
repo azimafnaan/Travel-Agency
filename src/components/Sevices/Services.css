@@ -1,0 +1,18 @@
+.travel-container h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: hsl(48, 86%, 39%);
+}
+
+.booking-service {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+@media only screen and (max-width: 688px) {
+  .booking-service {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
